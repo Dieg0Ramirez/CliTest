@@ -4,7 +4,10 @@ import { NgModule } from '@angular/core';
 //Rutas
 import {APP_ROUTES} from './app.routes'
 
+//temporal
+import { FormsModule } from '@angular/forms';
 // MOdulos
+
 import { PagesModule } from './pages/pages.module';
 //Componentes
 import { AppComponent } from './app.component';
@@ -14,17 +17,20 @@ import { RegisterComponent } from './login/register.component';
 
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
+   
+    
+    
   ],
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
